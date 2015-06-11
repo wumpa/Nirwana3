@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 10, 2015 at 03:29 PM
+-- Generation Time: Jun 11, 2015 at 03:48 PM
 -- Server version: 5.6.24
 -- PHP Version: 5.6.8
 
@@ -52,12 +52,25 @@ INSERT INTO `item` (`id`, `cid`, `name`, `type`, `desc`, `price`, `stock`, `pict
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sdfsdf`
+-- Table structure for table `useraccount`
 --
 
-CREATE TABLE IF NOT EXISTS `sdfsdf` (
-  `dfg` int(11) NOT NULL
+CREATE TABLE IF NOT EXISTS `useraccount` (
+  `username` varchar(20) NOT NULL,
+  `password` varchar(200) NOT NULL,
+  `name` varchar(200) NOT NULL,
+  `address` text NOT NULL,
+  `city` varchar(200) NOT NULL,
+  `phonenumber` text NOT NULL,
+  `email` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `useraccount`
+--
+
+INSERT INTO `useraccount` (`username`, `password`, `name`, `address`, `city`, `phonenumber`, `email`) VALUES
+('cuppyzh', 'asdasd', 'Yusuf Anugrah Putra Aditama', 'Jl. KPAD Sriwijaya VII no.56 RT.005/RW.008\r\n\r\nKec. Cimahi Tengah\r\nKel. Karang Mekar\r\n\r\n40524-Cimahi', 'Cimahi', '085624841995', 'iammephilesinthedark@gmail.com');
 
 --
 -- Indexes for dumped tables
