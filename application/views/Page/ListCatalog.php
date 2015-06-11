@@ -2,7 +2,7 @@
     echo "
     <div id='content-wrapper'>
         <div id='new'>
-            <h2>New Product</h2>
+            <h2>All Product</h2>
                 <div class='row'>
                     <ul>";
 

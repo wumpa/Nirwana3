@@ -1,5 +1,5 @@
 <head>
-	<link rel="stylesheet" href="../css/style.css" type="text/css" media="all"/>
+	<link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css" type="text/css" media="all"/>
 </head>
 <body>
 <div id="footer-wrapper">
@@ -13,8 +13,8 @@
                 <p>Telepon 022-xxxxxx<br>
                 E-mail : aliwumpa@gmail.com</p>
                 <ul>
-                  <li><a href="http://www.facebook.com"><img src="../images/Social media/Facebook.png"></a></li>
-                    <li><a href="http://www.twitter.com"><img src="../images/Social media/Twitter.png"></a></li>
+                  <li><a href="http://www.facebook.com"><img src="<?php echo base_url(); ?>images/Social media/Facebook.png"></a></li>
+                    <li><a href="http://www.twitter.com"><img src="<?php echo base_url(); ?>images/Social media/Twitter.png"></a></li>
                 </ul>
     
         </div>
@@ -22,7 +22,7 @@
         
         
         <div id="copyright">
-            <p>&copy; NirwanaOnlineShoes.com. Design By Cuppyzh|Wumpa|Nistique</p>
+            <p>&copy; NirwanaOnlineStage.com. Design By Cuppyzh | Wumpa | Nistique All Right Reserved</p>
         </div>
 </div>
 </body>

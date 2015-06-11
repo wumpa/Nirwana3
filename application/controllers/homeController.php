@@ -20,6 +20,8 @@ class homeController extends CI_Controller {
 	public function index()
 	{
 		$data['title'] = 'Nirwana Online Stage';
-		$this->load->view('home', $data);
+		$data['main_content'] = 'Page/Home';
+		
+		$this->load->view('Template/Home', $data);
 	}
 }

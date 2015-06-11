@@ -99,4 +99,4 @@ body								{ background-image: url(../images/bg/repeatable-bg.jpg); background-
 #social-media ul li					{ display:inline;
 										list-style-type:none; }
 										
-#copyright							{ clear: both; color: #FFF; font-weight: bold; margin: 10px; padding: 10px;}
+#copyright							{ clear: both; color: #FFF; font-weight: bold; margin: 10px; padding: 10px; font-size: 15px;}

@@ -2,13 +2,13 @@
     echo "
     <div id='content-wrapper'>
         <div id='new'>
-            <h2>New Product</h2>
+            <h2>".$based." Only</h2>
                 <div class='row'>
                     <ul>";
 
     foreach ($records as $rec) {
         //echo $rec->type." Ceking ".$based;
-        if ($based = $rec->type) {
+       // if ($based = $rec->type) {
             echo "
                         <li>
                             <a href='#' class='new-product'>
@@ -19,7 +19,7 @@
                                 <span class='price'><span class='Rupiah'>Rp.</span>".$rec->price."</span></span>
                             </a>
                         </li>";
-        }
+      //  }
 
     }
         

@@ -2,7 +2,7 @@
 <head>
 	<Title><?php echo $title ?></Title>
     
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css" type="text/css" media="all"/>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
                             <li><a href="http://localhost/Nirwana3/catalog/sportonly">Sports</a></li>
                         </ul>
                     </li>	
-                    <li><a href="#">Sale</a></li>    
+                    <li><a href="http://localhost/Nirwana3/Sale">Sale</a></li>    
               </ul>
             
               <div id="search">
