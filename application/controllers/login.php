@@ -9,7 +9,6 @@
 			//echo $_post['username'];
 			//redirect('catalog','refresh');
 			$this->load->model('userModel');
-
 			$this->userModel->validate();
 		}
 	}

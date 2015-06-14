@@ -15,7 +15,15 @@
             </div>
             
             <div id="login">
-                <a href="<?php echo base_url(); ?>login">Sign In</a>
+              <?php
+
+                if($this->session->userdata('username')!=NULL){
+                    echo "<a href='"; echo base_url(); echo "logout'>"; echo $this->session->userdata('username'); echo"</a>";
+                }else{
+                    echo "<a href='"; echo base_url(); echo "login'>Sign In</a>";
+                }
+
+              ?>
             </div>
         </div>
     

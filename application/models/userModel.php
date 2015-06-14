@@ -2,34 +2,29 @@
 	class userModel extends CI_Model{
 
 		public function validate(){
-			$this->db->from('useraccount');
 			$this->db->where('username',$this->input->post('username'));
 			$this->db->where('password',$this->input->post('password'));
-			$query = $this->db->get();
+			$query = $this->db->get('useraccount');
 
-			#if($query1 = $this->get_records())
-			#{
-			#	$data['records'] = $query1;
-			#}
-			if ($query->num_rows() == 1) {
+			$var['flag'] = 'false';
 
-				$result = array();
-				$result = $this->db->get('useraccount')->row_array();
-				$result['username'] = $result['username'];
-				$data['username'] = $result['username'];
-				// $query->result()->username;
-				$this->session->set_userdata($data);
-				//$this->load->view('Home', $data);
-				echo "Logged in";
-				// $this->load->view('mahasiswa_home', $data);
-				// $this->load->view('thread/index', $data);
-				// redirect('site/mahasiswa');
+			foreach ($query->result() as $rec) {
+				if ($rec->username == $this->input->post('username')) {
+					$var['flag'] = 'true';
+
+					$result['username'] = $rec->username;
+					$userdata['username'] = $rec->username;
+
+					$this->session->set_userdata($userdata);
+				}
 			}
-			else{
-				$this->session->set_flashdata('Error','Wrong email, password combination');
-	           // redirect('login','refresh');
-	            echo "False";
+
+			if ($var['flag'] == 'true'){
+				redirect('home');
+			} else {
+				redirect('login','refresh');
 			}
+
 		}
 
 		public function createUser(){
