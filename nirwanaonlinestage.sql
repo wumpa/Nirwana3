@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 11, 2015 at 03:48 PM
+-- Generation Time: Jun 14, 2015 at 01:43 PM
 -- Server version: 5.6.24
 -- PHP Version: 5.6.8
 
@@ -70,7 +70,8 @@ CREATE TABLE IF NOT EXISTS `useraccount` (
 --
 
 INSERT INTO `useraccount` (`username`, `password`, `name`, `address`, `city`, `phonenumber`, `email`) VALUES
-('cuppyzh', 'asdasd', 'Yusuf Anugrah Putra Aditama', 'Jl. KPAD Sriwijaya VII no.56 RT.005/RW.008\r\n\r\nKec. Cimahi Tengah\r\nKel. Karang Mekar\r\n\r\n40524-Cimahi', 'Cimahi', '085624841995', 'iammephilesinthedark@gmail.com');
+('cuppyzh', 'asdasd', 'Yusuf Anugrah Putra Aditama', 'Jl. KPAD Sriwijaya VII no.56 RT.005/RW.008\r\n\r\nKec. Cimahi Tengah\r\nKel. Karang Mekar\r\n\r\n40524-Cimahi', 'Cimahi', '085624841995', 'iammephilesinthedark@gmail.com'),
+('asdasd', 'asdasd', 'asdasd', 'asdasd', 'asdasd', 'asdasd', 'asdasdasd');
 
 --
 -- Indexes for dumped tables

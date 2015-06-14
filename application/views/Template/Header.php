@@ -15,7 +15,7 @@
             </div>
             
             <div id="login">
-                <a href="#">Sign In</a>
+                <a href="<?php echo base_url(); ?>login">Sign In</a>
             </div>
         </div>
     
