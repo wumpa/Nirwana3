@@ -1,7 +1,8 @@
 <?php
-	class userModel extends CI_Model{
+	class User_Model extends CI_Model{
 
 		public function validate(){
+
 			$this->db->where('username',$this->input->post('username'));
 			$this->db->where('password',$this->input->post('password'));
 			$query = $this->db->get('useraccount');
@@ -9,6 +10,7 @@
 			$var['flag'] = 'false';
 
 			foreach ($query->result() as $rec) {
+
 				if ($rec->username == $this->input->post('username')) {
 					$var['flag'] = 'true';
 
@@ -28,6 +30,7 @@
 		}
 
 		public function createUser(){
+			
 			$newUser = array(
 			'username' => $this->input->post('username'),
 			'password' => $this->input->post('password'),

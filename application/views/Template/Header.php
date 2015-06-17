@@ -11,34 +11,33 @@
 
         <div id="top">
           <div id="logo">
-                <h1>Nirwana Online Shoes</h1>
+                <h1>Nirwana Online Stage</h1>
             </div>
-            
-            <div id="login">
+
               <?php
 
                 if($this->session->userdata('username')!=NULL){
-                    echo "<a href='"; echo base_url(); echo "logout'>"; echo $this->session->userdata('username'); echo"</a>";
+                    $this->load->view('Header/UserSessionON');
                 }else{
-                    echo "<a href='"; echo base_url(); echo "login'>Sign In</a>";
+                    $this->load->view('Header/UserSessionOFF');
                 }
 
               ?>
-            </div>
+
         </div>
     
         <div id="topnav" class="wrap">
               <ul id="nav">
-                    <li><a href="http://localhost/Nirwana3/">Home</a></li>
-                    <li><a href="http://localhost/Nirwana3/catalog">Product</a>
+                    <li><a href="<?php echo base_url(); ?>">Home</a></li>
+                    <li><a href="<?php echo base_url(); ?>catalog">Catalog</a>
                         <ul>
-                            <li><a href="http://localhost/Nirwana3/catalog/kidonly">Kids</a></li>
-                            <li><a href="http://localhost/Nirwana3/catalog/manonly">Men</a></li>
-                            <li><a href="http://localhost/Nirwana3/catalog/womenonly">Women</a></li>
-                            <li><a href="http://localhost/Nirwana3/catalog/sportonly">Sports</a></li>
+                            <li><a href="<?php echo base_url(); ?>catalog/kidonly">Kids</a></li>
+                            <li><a href="<?php echo base_url(); ?>catalog/manonly">Men</a></li>
+                            <li><a href="<?php echo base_url(); ?>catalog/womenonly">Women</a></li>
+                            <li><a href="<?php echo base_url(); ?>catalog/sportonly">Sports</a></li>
                         </ul>
                     </li>	
-                    <li><a href="http://localhost/Nirwana3/Sale">Sale</a></li>    
+                    <li><a href="<?php echo base_url(); ?>Sale">Sale</a></li>    
               </ul>
             
               <div id="search">

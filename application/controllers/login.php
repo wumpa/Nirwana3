@@ -1,15 +1,16 @@
 <?php
-	class login extends CI_Controller {
+
+	class Login extends CI_Controller {
 		public function index(){
-			$this->load->view('Template/login');
+
+			$this->load->view('Page/Login');
 		}
 
 		public function validate(){
-			//echo $this->input->post('username');
-			//echo $_post['username'];
-			//redirect('catalog','refresh');
-			$this->load->model('userModel');
-			$this->userModel->validate();
+
+			$this->load->model('User_Model');
+			$this->User_Model->validate();
 		}
 	}
+	
 ?>

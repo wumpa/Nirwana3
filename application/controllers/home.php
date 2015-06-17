@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class home extends CI_Controller {
+	class Home extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -17,11 +17,12 @@ class home extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	
 	public function index()
 	{
 		$data['title'] = 'Nirwana Online Stage';
-		$data['main_content'] = 'Page/Home';
+		$data['main_content'] = 'Main_Content/Home';
 
-		$this->load->view('Template/Home', $data);
+		$this->load->view('Page/Home', $data);
 	}
 }
