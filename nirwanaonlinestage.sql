@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 14, 2015 at 01:43 PM
+-- Generation Time: Jun 18, 2015 at 03:21 PM
 -- Server version: 5.6.24
 -- PHP Version: 5.6.8
 
@@ -52,6 +52,62 @@ INSERT INTO `item` (`id`, `cid`, `name`, `type`, `desc`, `price`, `stock`, `pict
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `listitemofransaction`
+--
+
+CREATE TABLE IF NOT EXISTS `listitemofransaction` (
+  `id_trans` int(11) NOT NULL,
+  `id_item` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `listitemofransaction`
+--
+
+INSERT INTO `listitemofransaction` (`id_trans`, `id_item`) VALUES
+(1, 6),
+(1, 6),
+(2, 6),
+(2, 6),
+(2, 11),
+(2, 6),
+(2, 6),
+(2, 6),
+(2, 6),
+(2, 6),
+(2, 6),
+(2, 6),
+(3, 6),
+(3, 7),
+(3, 8),
+(3, 9),
+(3, 11),
+(3, 10);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `transaction`
+--
+
+CREATE TABLE IF NOT EXISTS `transaction` (
+  `id` int(11) NOT NULL,
+  `useraccount_username` varchar(20) NOT NULL,
+  `status` varchar(10) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `transaction`
+--
+
+INSERT INTO `transaction` (`id`, `useraccount_username`, `status`) VALUES
+(1, 'asdasd', 'done'),
+(2, 'asdasd', 'idle'),
+(3, 'cuppyzh', 'idle');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `useraccount`
 --
 
@@ -70,8 +126,9 @@ CREATE TABLE IF NOT EXISTS `useraccount` (
 --
 
 INSERT INTO `useraccount` (`username`, `password`, `name`, `address`, `city`, `phonenumber`, `email`) VALUES
-('cuppyzh', 'asdasd', 'Yusuf Anugrah Putra Aditama', 'Jl. KPAD Sriwijaya VII no.56 RT.005/RW.008\r\n\r\nKec. Cimahi Tengah\r\nKel. Karang Mekar\r\n\r\n40524-Cimahi', 'Cimahi', '085624841995', 'iammephilesinthedark@gmail.com'),
-('asdasd', 'asdasd', 'asdasd', 'asdasd', 'asdasd', 'asdasd', 'asdasdasd');
+('admin', 'admin', 'admin', 'admin', 'admin', 'admin', 'admin'),
+('asdasd', 'asdasd', 'asdasd', 'asdasd', 'asdasd', 'asdasd', 'asdasdasd'),
+('cuppyzh', 'asdasd', 'Yusuf Anugrah Putra Aditama', 'Jl. KPAD Sriwijaya VII no.56 RT.005/RW.008\r\n\r\nKec. Cimahi Tengah\r\nKel. Karang Mekar\r\n\r\n40524-Cimahi', 'Cimahi', '085624841995', 'iammephilesinthedark@gmail.com');
 
 --
 -- Indexes for dumped tables
@@ -84,6 +141,18 @@ ALTER TABLE `item`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `transaction`
+--
+ALTER TABLE `transaction`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `useraccount`
+--
+ALTER TABLE `useraccount`
+  ADD PRIMARY KEY (`username`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -92,6 +161,11 @@ ALTER TABLE `item`
 --
 ALTER TABLE `item`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
+--
+-- AUTO_INCREMENT for table `transaction`
+--
+ALTER TABLE `transaction`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
