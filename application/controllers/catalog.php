@@ -17,6 +17,8 @@
 
 			$data['records'] = $this->Catalog_Model->getData();
 
+			$this->session->set_flashdata('dir','Catalog');
+
 			$this->load->view('Page/Catalog', $data);
 		}
 
@@ -31,6 +33,8 @@
 
 			$data['records'] = $this->Catalog_Model->getSpecData('Man');
 
+			$this->session->set_flashdata('dir','Catalog/manonly');
+
 			$this->load->view('Page/Catalog', $data);
 		}
 
@@ -43,6 +47,8 @@
 			$data['based'] = 'Women';
 
 			$data['records'] = $this->Catalog_Model->getSpecData('Women');
+
+			$this->session->set_flashdata('dir','Catalog/womenonly');
 
 			$this->load->view('Page/Catalog', $data);
 		}
@@ -57,6 +63,8 @@
 
 			$data['records'] = $this->Catalog_Model->getSpecData('Kids');
 
+			$this->session->set_flashdata('dir','Catalog/kidonly');
+
 			$this->load->view('Page/Catalog', $data);
 		}
 
@@ -70,6 +78,8 @@
 
 			$data['records'] = $this->Catalog_Model->getSpecData('Sport');
 
+			$this->session->set_flashdata('dir','Catalog/sportonly');
+
 			$this->load->view('Page/Catalog', $data);
 		}
 
@@ -78,7 +88,7 @@
 			$this->load->model('Item_Model');
 			$this->Item_Model->addToCart($data);
 
-			redirect('');
+			redirect($this->session->flashdata('dir'));
 		}
 
 	}
