@@ -73,9 +73,12 @@
 			$this->load->view('Page/Catalog', $data);
 		}
 
-		public function addToCart(){
+		public function addToCart($data){
 
-			
+			$this->load->model('Item_Model');
+			$this->Item_Model->addToCart($data);
+
+			redirect('');
 		}
 
 	}

@@ -16,7 +16,7 @@
 
               <?php
 
-                if($this->session->userdata('username')!=NULL){
+                if($this->session->userdata('username') != NULL){
                     $this->load->view('Header/UserSessionON');
                 }else{
                     $this->load->view('Header/UserSessionOFF');
