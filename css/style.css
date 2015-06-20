@@ -9,12 +9,48 @@ body								{ background-image: url(../images/bg/repeatable-bg.jpg); background-
 
 #logo								{ margin: 30px 0; float: left; }
 
-#login								{ margin: 30px 30px; float: right;  }
-#login a							{ text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 12px; color: #818BA3; padding: 5px 15px;
-										border: 2px #818BA3 solid; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;
-										border-top-left-radius: 15px; border-top-right-radius: 15px; }
+#login								{ margin: 30px 3px; float: right;  }
+#login a							{ text-decoration: none; font-size: 14px; color: #818BA3; padding: 5px 2px; }
 
-#login a:hover						{ font-weight: bold; text-transform: uppercase; font-size: 12px; border-color: #030303; color: #030303; }
+#login a:hover						{ font-size: 14px; border-color: #030303; color: #030303; }
+
+#separator							{ margin: 30px 0px; float: right; width: 1px; height: 20px; color: #818BA3; border-left: solid 1px #818BA3; }
+
+#separator2							{ margin: 35px 0px; float: right; width: 1px; height: 20px; color: #818BA3; border-left: solid 1px #818BA3; }
+
+#register							{ margin: 30px 15px 30px 3px; float: right; }
+#register a							{ text-decoration: none; font-size: 14px; color: #818BA3; padding: 5px 2px; }
+
+#register a:hover					{ font-size: 14px; border-color: #030303; color: #030303; }
+
+#profile							{ margin: 30px 3px 30px 0px; float: right;  }
+#profile a							{ text-decoration: none; font-size: 14px; color: #818BA3; padding: 5px 2px; }
+
+#profile a:hover					{ font-size: 14px; color: #030303; }
+
+#prof-nav							{ margin: 2; padding: 5px 8px 5px 0px;  display: block; list-style: none;}
+#prof-nav li 						{ display: block; position: relative; float: left; }
+
+#prof-nav ul						{ display: none; position: absolute; list-style: none; }
+#prof-nav ul li 					{ float: left; padding: 5px 5px 5px 0; }
+#prof-nav li a:hover, 
+#prof-nav li a.hov					{ color: #000; }									
+#prof-nav li:hover ul				{ display: block; }
+
+#cart								{ margin: 30px 3px 30px 0px; float: right;  }
+#cart a								{ text-decoration: none; font-size: 14px; color: #818BA3; padding: 5px 2px; }
+
+#cart a:hover						{ font-size: 14px; color: #030303; }
+
+#cart-nav							{ margin: 2; padding: 3px 2px 2px 8px;  display: block; list-style: none;}
+#cart-nav li 						{ display: block; position: relative; }
+#cart-nav li a 						{ display: block; }
+#cart-nav ul						{ display: none; position: absolute; list-style: none; }
+#cart-nav ul li 					{ float: left; width: 180px;  }
+#cart-nav li a:hover, 
+#cart-nav li a.hov					{ color: #000; }									
+#cart-nav li:hover ul				{ display: block; }
+
 	
 #topnav								{ clear: both; }									
 
@@ -41,7 +77,7 @@ body								{ background-image: url(../images/bg/repeatable-bg.jpg); background-
 #content-wrapper 					{ width: 900px; margin: 10px auto; padding:10px 30px;}
 
 /*CSS New Product*/
-#new 								{ margin: 0 0 50px 0;}
+#new 								{ margin: 0 0 12px 0;}
 #new h2								{ font-style: italic; font-family: georgia, serif; border-bottom: 2px #999 dotted; 
 										padding: 2px 2px 10px 2px;}
 
@@ -49,21 +85,21 @@ body								{ background-image: url(../images/bg/repeatable-bg.jpg); background-
 .row ul								{ width: 1017px; display: block; position: relative; }
 .row ul li 							{ float: left; display: inline; width: 220px; height: 266px; padding: 0 9px 0 0; }
 
-.new-product						{ background: url(../images/product-bg.png) center; width: 190px; height: 252px; padding: 7px 7px 0 8px; display: block;
+.product						{ background: url(../images/product-bg.png) center; width: 190px; height: 252px; padding: 7px 7px 0 8px; display: block;
 										font-size: 14px; line-height: 18px; color: #2f3032; font-family: georgia, serif; font-style: italic;
 										text-decoration: none; border: 2px #CCC dotted; }
-.new-product img 					{ padding: 0; position: relative; margin-left: -2px; width: 192px; height: 140px; }
-.new-product .order 				{ display: block; }
-.new-product .model 				{ font-size: 14px; color: #1898D6; padding: 0; }
-.new-product .number 				{ font-family: arial, sans-serif; font-style: normal; }
-.new-product .buy-text 				{ font-size: 16px; line-height: 30px; color: #FFBA00; font-style: normal; font-weight: bold; letter-spacing: -1px;
+.product img 					{ padding: 0; position: relative; margin-left: -2px; width: 192px; height: 140px; }
+.product .order 				{ display: block; }
+.product .model 				{ font-size: 14px; color: #1898D6; padding: 0; }
+.product .number 				{ font-family: arial, sans-serif; font-style: normal; }
+.product .buy-text 				{ font-size: 16px; line-height: 30px; color: #FFBA00; font-style: normal; font-weight: bold; letter-spacing: -1px;
 										float: left;display: inline; padding: 6px 0 0 0; }
-.new-product .price 				{ font-size: 24px; line-height: 20px; float: right; display: inline; font-style: normal; color: #1898D6; font-weight: bold; }
-.new-product .Rupiah 				{ font-size: 18px; }
-.new-product:hover,
-.new-product.hover 					{ background: url(../images/product-hover.png) center; text-decoration: none; border: 2px #000 solid; }
-.new-product:hover .model 			{ font-weight: bold; }
-.new-product:hover .buy-text 		{ color: #FF7800; }
+.product .price 				{ font-size: 24px; line-height: 20px; float: right; display: inline; font-style: normal; color: #1898D6; font-weight: bold; }
+.product .Rupiah 				{ font-size: 18px; }
+.product:hover,
+.product.hover 					{ background: url(../images/product-hover.png) center; text-decoration: none; border: 2px #000 solid; }
+.product:hover .model 			{ font-weight: bold; }
+.product:hover .buy-text 		{ color: #FF7800; }
 
 /*CSS Best Seller*/
 #best-seller h2						{ font-style: italic; font-family: georgia, serif; padding: 2px 2px 10px 2px;}
@@ -99,4 +135,8 @@ body								{ background-image: url(../images/bg/repeatable-bg.jpg); background-
 #social-media ul li					{ display:inline;
 										list-style-type:none; }
 										
-#copyright							{ clear: both; color: #FFF; font-weight: bold; margin: 10px; padding: 10px; font-size: 15px;}
+#copyright							{ clear: both; color: #FFF; font-weight: bold; margin: 10px; padding: 10px;}
+
+/*Login form*/
+
+.sign-in							{ width: 200px; margin: 10px auto; padding: 10px 30px; }
