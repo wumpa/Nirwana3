@@ -10,7 +10,7 @@
     foreach ($records as $rec) {
             echo "
                         <li>
-                            <a href='";  echo base_url().'catalog/addtocart/'.$rec->id; echo "' class='new-product'>
+                            <a href='";  echo base_url().'catalog/addtocart/'.$rec->id; echo "' class='product'>
                                 <img src=".$rec->pict."/>
                                 <span class='model'>".$rec->type."</span>
                                 <span class='order'>Nomor Katalog: <span class='number'>".$rec->id."</span></span>
