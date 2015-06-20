@@ -8,7 +8,12 @@
 	if ($query->num_rows() == 0){
 		$info = 'No Item in Cart';
 	} else {
-		$info = 'Item(s) in Cart';
+		$transId = $query->row(0)->id;
+		$this->db->where('id_trans',$transId);
+		$query = $this->db->get('listitemofransaction');
+
+		$count = $query->num_rows();
+		$info = $count.' - Item(s) in Cart';
 	}
 
 	echo "
