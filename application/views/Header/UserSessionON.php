@@ -5,16 +5,22 @@
 
 	$info = '';
 
-	if ($query->num_rows() == 0){
-		$info = 'No Item in Cart';
-	} else {
+	#if ($query->num_rows() == 0){
+		
+	#} else {
 		$transId = $query->row(0)->id;
 		$this->db->where('id_trans',$transId);
 		$query = $this->db->get('listitemofransaction');
 
 		$count = $query->num_rows();
-		$info = $count.' - Item(s) in Cart';
-	}
+
+		if ($query->num_rows() == 0){
+			$info = 'No Item in Cart';
+		} else {
+			$info = $count.' - Item(s) in Cart';
+		}
+
+	#}
 
 	echo "
 	<div id='cart'>
@@ -22,7 +28,7 @@
 			<li><a href='"; echo base_url(); echo "'>"; echo $info; echo"</a>
 					<ul>
 						<li><a>View</a></li>
-						<li><a href='"; echo base_url(); echo "logout'>Clear</a></li>
+						<li><a href='"; echo base_url(); echo "cart/clearcart'>Clear</a></li>
 					</ul>
 			</li>
 		</ul>
