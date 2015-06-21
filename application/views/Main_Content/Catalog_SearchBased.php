@@ -1,4 +1,5 @@
 <?php
+
     echo "
     <div id='content-wrapper'>
         <div id='new'>
@@ -7,7 +8,7 @@
                     <ul>";
 
     foreach ($records as $rec) {
-        //echo $rec->type." Ceking ".$based;
+        //echo $rec->type." Ceking ".$based; #
        // if ($based = $rec->type) {
             echo "
                         <li>

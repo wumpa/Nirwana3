@@ -18,7 +18,10 @@
 			$this->db->delete('listitemofransaction');
 
 			redirect('home');
+		}
 
+		public function viewcart(){
+			$data['total'] = '';
 		}
 
 	}
