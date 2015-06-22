@@ -39,7 +39,7 @@
 			'address' => $this->input->post('address'),
 			'city' => $this->input->post('city'),
 			'phonenumber' => $this->input->post('phonenumber'),
-			'email' => md5($this->input->post('email'))
+			'email' => ($this->input->post('email'))
 			);
 			
 			$insert= $this->db->insert('useraccount', $newUser);
