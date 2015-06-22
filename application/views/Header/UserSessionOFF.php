@@ -1,6 +1,6 @@
 <?php
 	echo "
-	<div id='register'>
+	<div id='registration'>
 		<a href='"; echo base_url(); echo "register'>Sign Up</a>
 	</div>
 	<div id='separator'>
