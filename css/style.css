@@ -163,4 +163,4 @@ select 								{ font-size: 16px; height: auto; margin: 1px; padding: 5px; width
 .regist input[type="text"],
 .regist input[type="password"], .regist textarea,
 select 								{ font-size: 16px; height: auto; margin: 1px; padding: 5px; width: 100%; background-color: #e8eeef; color: #8a97a0; 
-										margin-bottom: 15px; }
+										margin-bottom: 10px; }
