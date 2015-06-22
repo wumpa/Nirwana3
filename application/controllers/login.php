@@ -3,8 +3,9 @@
 	class Login extends CI_Controller {
 
 		public function index(){
+			$data['title'] = 'Nirwana Online Stage | Catalog';
 			if ($this->sessionIsOn() =='true') redirect('');
-			else $this->load->view('Page/Login');
+			else $this->load->view('Page/Login', $data);
 		}
 
 		public function sessionIsOn(){
