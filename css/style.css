@@ -5,7 +5,7 @@ body								{ background-image: url(../images/bg/repeatable-bg.jpg); background-
 .wrap								{ border-top: 1px #000 dotted; width: 900px; margin: 0 auto;}				
 
 /*CSS Header*/	
-#wrapper							{ width: 900px; margin: 10px auto; background-color: #FFF; padding: 10px 30px; }
+#wrapper							{ width: 900px; margin: 10px auto 30px auto; background-color: #FFF; padding: 10px 30px; }
 
 #logo								{ margin: 30px 0; float: left; }
 
@@ -127,7 +127,7 @@ body								{ background-image: url(../images/bg/repeatable-bg.jpg); background-
 .products-slider .pointer .next:hover { border: 2px #9C9C9C solid; border-radius: 360px; }
 
 /*CSS Footer*/
-#footer-wrapper						{ width:900px; margin: 10px auto;
+#footer-wrapper						{ width:900px; margin: 30px auto 10px auto;
 										background:url(../images/background-footer.jpg);
 										padding:10px 30px; }
 
