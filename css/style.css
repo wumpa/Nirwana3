@@ -34,7 +34,7 @@ body								{ background-image: url(../images/bg/repeatable-bg.jpg); background-
 #prof-nav ul						{ display: none; position: absolute; list-style: none; }
 #prof-nav ul li 					{ float: left; padding: 5px 5px 5px 0; }
 #prof-nav li a:hover, 
-#prof-nav li a.hov					{ color: #000; }									
+#prof-nav li a.hov					{ color: #000; background-color: #CCC; }									
 #prof-nav li:hover ul				{ display: block; }
 
 #cart								{ margin: 30px 3px 30px 0px; float: right;  }
@@ -46,9 +46,9 @@ body								{ background-image: url(../images/bg/repeatable-bg.jpg); background-
 #cart-nav li 						{ display: block; position: relative; }
 #cart-nav li a 						{ display: block; }
 #cart-nav ul						{ display: none; position: absolute; list-style: none; }
-#cart-nav ul li 					{ float: left; width: 180px;  }
+#cart-nav ul li 					{ float: left; width: 50px;  }
 #cart-nav li a:hover, 
-#cart-nav li a.hov					{ color: #000; }									
+#cart-nav li a.hov					{ color: #000; background-color: #CCC; }									
 #cart-nav li:hover ul				{ display: block; }
 
 	
