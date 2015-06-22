@@ -1,5 +1,5 @@
 <?php
-	$this->load->view('Template/header');
+	$this->load->view('Template/header', $title);
 
 	$this->load->view('Main_Content/login');
 
