@@ -15,6 +15,12 @@
 				return 'false';
 			} else return 'true';
 		}
+
+		public function createUser(){
+
+			$this->load->model('User_Model');
+			$this->User_Model->createUser();
+		}
 	}
 	
 ?>

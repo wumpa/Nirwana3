@@ -2,9 +2,9 @@
 	<h2>Sign In</h2>
 					<?php
 						echo form_open("login/validate");
-						echo form_input("username","","placeholder=username");
+						echo "Username : "; echo form_input("username","");
 						echo "<br />";
-						echo form_password("password","","placeholder=password");
+						echo "Password : "; echo form_password("password","");
 						echo "<br />";
 						echo form_submit("validate","Login");
 						echo form_close();
