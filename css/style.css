@@ -140,3 +140,4 @@ body								{ background-image: url(../images/bg/repeatable-bg.jpg); background-
 /*Login form*/
 
 .sign-in							{ width: 180px; margin: 10px auto; padding: 10px 30px; background-color: #763500; }
+.sign-in h2							{ text-align: center; }
