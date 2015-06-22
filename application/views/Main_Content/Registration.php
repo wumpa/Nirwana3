@@ -5,6 +5,13 @@
 			<input type="text" name="username" />
 			<label>Password</label>
 			<input type="password" name="password" />
+			<input type="text" name="name" />
+			<label>Alamat</label>
+			<input type="text" name="address" />
+			<label>Kota</label>
+			<input type="text" name="city" />
+			<label>Telepon</label>
+			<input type="text" name="phonenumber" />
 			<label>Email</label>
 			<input type="text" name="email" />
 
