@@ -3,7 +3,7 @@
     echo "
     <div id='content-wrapper'>
         <div id='new'>
-            <h2>All Product</h2>
+            <h2>On Sale!</h2>
                 <div class='row'>
                     <ul>";
 
@@ -15,9 +15,8 @@
 
         if ($query->num_rows()>0){
             $price = $price - ($price*($query->row(0)->diskon/100));
-        }
 
-            echo "
+             echo "
                         <li>
                             <a href='";  echo base_url().'catalog/addtocart/'.$rec->id; echo "' class='product'>
                                 <img src=".$rec->pict."/>
@@ -27,6 +26,9 @@
                                 <span class='price'><span class='Rupiah'>Rp.</span>".$price."</span></span>
                             </a>
                         </li>";
+        }
+
+           
 
     }
         

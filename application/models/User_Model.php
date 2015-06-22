@@ -18,6 +18,7 @@
 					$userdata['username'] = $rec->username;
 
 					$this->session->set_userdata($userdata);
+					$this->session->set_userdata('redirect', 'page/uri/here');
 				}
 			}
 

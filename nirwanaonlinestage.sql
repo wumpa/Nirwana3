@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 18, 2015 at 03:21 PM
+-- Generation Time: Jun 22, 2015 at 03:17 PM
 -- Server version: 5.6.24
 -- PHP Version: 5.6.8
 
@@ -67,22 +67,46 @@ CREATE TABLE IF NOT EXISTS `listitemofransaction` (
 INSERT INTO `listitemofransaction` (`id_trans`, `id_item`) VALUES
 (1, 6),
 (1, 6),
-(2, 6),
-(2, 6),
-(2, 11),
-(2, 6),
-(2, 6),
-(2, 6),
-(2, 6),
-(2, 6),
-(2, 6),
-(2, 6),
 (3, 6),
 (3, 7),
 (3, 8),
 (3, 9),
 (3, 11),
-(3, 10);
+(3, 10),
+(4, 6),
+(4, 7),
+(2, 7),
+(2, 8),
+(2, 8),
+(2, 7),
+(2, 7),
+(2, 7),
+(2, 7),
+(2, 7),
+(2, 7),
+(2, 7),
+(2, 7),
+(2, 7),
+(2, 7);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sale_item`
+--
+
+CREATE TABLE IF NOT EXISTS `sale_item` (
+  `id_item` int(11) NOT NULL,
+  `diskon` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `sale_item`
+--
+
+INSERT INTO `sale_item` (`id_item`, `diskon`) VALUES
+(6, 50),
+(11, 50);
 
 -- --------------------------------------------------------
 
@@ -94,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `transaction` (
   `id` int(11) NOT NULL,
   `useraccount_username` varchar(20) NOT NULL,
   `status` varchar(10) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `transaction`
@@ -103,7 +127,8 @@ CREATE TABLE IF NOT EXISTS `transaction` (
 INSERT INTO `transaction` (`id`, `useraccount_username`, `status`) VALUES
 (1, 'asdasd', 'done'),
 (2, 'asdasd', 'idle'),
-(3, 'cuppyzh', 'idle');
+(3, 'cuppyzh', 'idle'),
+(4, 'admin', 'idle');
 
 -- --------------------------------------------------------
 
@@ -141,6 +166,12 @@ ALTER TABLE `item`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `sale_item`
+--
+ALTER TABLE `sale_item`
+  ADD PRIMARY KEY (`id_item`);
+
+--
 -- Indexes for table `transaction`
 --
 ALTER TABLE `transaction`
@@ -165,7 +196,7 @@ ALTER TABLE `item`
 -- AUTO_INCREMENT for table `transaction`
 --
 ALTER TABLE `transaction`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

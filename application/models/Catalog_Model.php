@@ -18,6 +18,10 @@
 			return $query->result();
 		}
 
+		public function checkSale(){
+			
+		}
+
 	}
 	
 ?>
