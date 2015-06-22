@@ -20,6 +20,8 @@
 
 			$this->load->model('User_Model');
 			$this->User_Model->createUser();
+
+			header('Location: ' . $_SERVER['HTTP_REFERER']);
 		}
 	}
 	

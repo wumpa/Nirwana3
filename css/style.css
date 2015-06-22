@@ -157,9 +157,8 @@ select 								{ font-size: 16px; height: auto; margin: 1px; padding: 5px; width
 /*Register form*/
 
 .regist 							{ width: 290px; margin:10px auto; text-align: left; }
-.regist label						{ font-size: 14px; font-family: arial; margin: 1px; }
 .regist h2							{ margin-bottom: 10px; width: 300px; border-bottom: dotted 2px #000; }
-.regist button[type="submit"] 		{ padding:5px; width: 300px; text-align: center; color: #FFF; background-color: #4bc970; font-size: 18px; }
+.regist input[type="submit"] 		{ padding:5px; width: 300px; text-align: center; color: #FFF; background-color: #4bc970; font-size: 18px; }
 .regist input[type="text"],
 .regist input[type="password"], .regist textarea,
 select 								{ font-size: 16px; height: auto; margin: 1px; padding: 5px; width: 100%; background-color: #e8eeef; color: #8a97a0; 
