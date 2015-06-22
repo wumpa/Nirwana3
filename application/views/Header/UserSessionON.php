@@ -5,9 +5,9 @@
 
 	$info = '';
 
-	#if ($query->num_rows() == 0){
-		
-	#} else {
+	if ($query->num_rows() == 0){
+		$info = 'No Item in Cart';
+	} else {
 		$transId = $query->row(0)->id;
 		$this->db->where('id_trans',$transId);
 		$query = $this->db->get('listitemofransaction');
@@ -20,7 +20,7 @@
 			$info = $count.' - Item(s) in Cart';
 		}
 
-	#}
+	}
 
 	echo "
 	<div id='cart'>
