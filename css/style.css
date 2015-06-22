@@ -139,5 +139,23 @@ body								{ background-image: url(../images/bg/repeatable-bg.jpg); background-
 
 /*Login form*/
 
-.sign-in							{ width: 180px; margin: 10px auto; padding: 10px 30px; background-color: #763500; }
-.sign-in h2							{ text-align: center; }
+.sign-in							{ width: 290px; margin:10px auto; text-align: left; }
+.sign-in h2							{ margin-bottom: 10px; width: 300px; border-bottom: dotted 2px #000; }
+.sign-in input[type="submit"] 		{ padding:5px; width: 300px; text-align: center; color: #FFF; background-color: #4bc970; font-size: 18px; }
+.sign-in input[type="text"],
+.sign-in input[type="password"], 
+.sign-in textarea,
+select 								{ font-size: 16px; height: auto; margin: 1px; padding: 5px; width: 100%; background-color: #e8eeef; color: #8a97a0; 
+										margin-bottom: 15px; }
+
+
+/*Register form*/
+
+.regist 							{ width: 290px; margin:10px auto; text-align: left; }
+.regist label						{ font-size: 14px; font-family: arial; margin: 1px; }
+.regist h2							{ margin-bottom: 10px; width: 300px; border-bottom: dotted 2px #000; }
+.regist button[type="submit"] 		{ padding:5px; width: 300px; text-align: center; color: #FFF; background-color: #4bc970; font-size: 18px; }
+.regist input[type="text"],
+.regist input[type="password"], .regist textarea,
+select 								{ font-size: 16px; height: auto; margin: 1px; padding: 5px; width: 100%; background-color: #e8eeef; color: #8a97a0; 
+										margin-bottom: 15px; }
