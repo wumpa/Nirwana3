@@ -5,6 +5,7 @@
 			<input type="text" name="username" />
 			<label>Password</label>
 			<input type="password" name="password" />
+			<label>Nama</label>
 			<input type="text" name="name" />
 			<label>Alamat</label>
 			<input type="text" name="address" />
