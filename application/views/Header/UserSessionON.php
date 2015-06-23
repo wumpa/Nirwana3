@@ -27,7 +27,7 @@
 		<ul id='cart-nav'>
 			<li><a href='"; echo base_url(); echo "'>"; echo $info; echo"</a>
 					<ul>
-						<li><a>View</a></li>
+						<li><a href='"; echo base_url(); echo "cart/viewcart'>View</a></li>
 						<li><a href='"; echo base_url(); echo "cart/clearcart'>Clear</a></li>
 					</ul>
 			</li>

@@ -21,8 +21,18 @@
 		}
 
 		public function viewcart(){
-			$data['total'] = '';
+
+			$data['title'] = 'Nirwana Online Stage | Cart';
+			$data['main_content'] = 'Main_Content/Cart_List';
+
+			$this->load->model('Cart_Model');
+
+			$data['records'] = $this->Cart_Model->getData();
+
+			$this->load->view('Page/Cart', $data);
 		}
+
+		
 
 	}
 ?>
